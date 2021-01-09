@@ -34,7 +34,7 @@ async function getData() {
     const response = await fetch(url);
     const data = await response.json();
     const { hits, total } = data;
-    if (!total) return notice('Search failed');
+    if (!total) return notice('No results were found for your request.');
     const layout = galleryTemplate(hits);
     refs.gallery.insertAdjacentHTML('beforeend', layout);
     Observer.observe(refs.gallery.lastElementChild);
