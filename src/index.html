@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <title>hw-13-image-finder</title>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="https://pixabay.com/" class="logo-link">
+            <img
+              src="./img/pixabay-logo.svg"
+              alt="pixabay"
+              class="logo-link-img"
+              width="130"
+              height="25"
+            />
+          </a>
+        </div>
+        <!-- <div id="select"></div> -->
+      </div>
+    </header>
+    <section class="wrapper">
+      <form class="search-form" id="search-form">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            name="query"
+            autocomplete="off"
+            placeholder="Search images..."
+            class="search-form-input"
+          />
+          <button class="search-form-btn">Search</button>
+        </div>
+      </form>
+
+      <ul class="gallery"></ul>
+    </section>
+
+  </main>
+</body>
+</html>
